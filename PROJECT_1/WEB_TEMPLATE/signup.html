@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<title>Sign in </title>
+<link rel="shortcut icon" type="image/png" href="img/sigin.png">
+<head>
+  <title>Bootstrap Landing Page Website Tutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+  <link type="text/css" rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="jqueryUI/jquery-ui.css">
+<link type="text/css" rel="stylesheet" href="jqueryUI/jquery-ui.structure.css">
+<link type="text/css" rel="stylesheet" href="jqueryUI/jquery-ui.theme.css">
+<style>
+<style>
+.c1
+{
+color:black;
+font-family:century gothic;
+
+padding:0px 0px;
+}
+.c2
+{
+
+color:black;
+font-family:century gothic;
+
+padding:0px 0px;
+}
+.c3
+{
+color:black;
+font-family:century gothic;
+
+padding:0px 0px;
+}
+.navbar-default .navbar-nav li a
+{
+	color:black;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a .active
+{
+	color:orange;
+}
+body
+{   
+background:url('img/image3.jpg')no-repeat center center fixed;
+width:100%;
+height:100%;
+padding-top:130px;
+	font-family:century gothic;
+}
+
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+
+
+.container
+{
+    
+	padding:6px;
+	max-width:478px;
+	margin:auto;
+	border-radius:15px;
+	background:linear-gradient(#787ea1,#000033);
+	background:-webkit-linear-gradient(#787ea1,#000033);
+	background:-moz-linear-linear-gradient(#787ea1,#000033);
+	background:-o-linear-gradient(#787ea1,#000033);
+	background:#95A5A6;
+	color:black;
+	opacity:.75;
+}
+h1,p
+{
+text-align:center;
+}
+input[type=text],input[type=password]
+{
+color:black;
+font-family:century gothic;
+width:100%;
+padding:15px;
+margin:6px 0 22px 0;
+display:inline-block;
+border-radius:12px;
+background:#F1C40F;
+font-size:19px;
+}
+button
+{
+background:#DC7633;
+color:black;
+padding:14px 14px;
+margin:6px 0;
+border:none;
+cursor:pointer;
+width:100%;
+opacity:0.85;
+font-size:16px;
+font-family:century gothic;
+}
+button:hover
+{
+	opacity:1;
+	
+}
+.cancelbtn
+{
+	background:#B3B6B7;
+}
+.cancelbtn,.signupbtn
+{
+	float:left;
+	width:50%;
+}
+hr
+{
+	border:1px solid #f1f1f1;
+	margin-bottom:25px;
+}
+.clearfix::after
+{
+	content:"";
+	clear:both;
+	display:table;
+}
+@media screen and (max-width:546px)
+{
+	.cancelbtn,.signupbtn{
+	width:100%;
+	}
+body
+{   
+
+padding-top:260px;
+}
+	
+	
+	.navbar
+{
+	background-color:grey;
+	padding:1% 0;
+	font-size:14px;
+	font-family:century gothic;
+
+
+	
+}
+.navbar button 
+{
+width:60px;
+height:100%;
+float:right;
+padding-left:17px;
+
+}
+.navbar-toggle
+{
+padding-left:220px;
+}
+
+
+.navbar-brand
+{
+	min-height:55px;
+	padding:0px 0px 10px 0px;
+}
+}
+
+
+
+
+
+@media screen and (max-width:780px)
+{
+	.cancelbtn,.signupbtn{
+	width:100%;
+	}
+body
+{   
+
+padding-top:149px;
+}
+	
+	
+	.navbar
+{
+	background-color:grey;
+	padding:1% 0;
+	font-size:14px;
+	font-family:century gothic;
+
+
+	
+}
+.navbar button 
+{
+width:60px;
+height:100%;
+float:right;
+padding-left:17px;
+
+}
+.navbar-toggle
+{
+padding-left:220px;
+}
+
+
+.navbar-brand
+{
+	min-height:55px;
+	padding:0px 0px 10px 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+	
+.navbar
+{
+	background-color:grey;
+	padding:1% 0;
+	font-size:14px;
+	font-family:century gothic;
+
+
+	
+}
+.navbar-brand
+{
+	min-height:55px;
+	padding:0 15px 5px;
+}
+	
+	
+
+</style>
+</style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" style="opacity:.75;" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+<span class="sr-only">Toggle Navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#"><img src="img/twitter.ico" width="48px" height="57px" style="padding-bottom:8px;" ></a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-main">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html"  style="font-family:century gothic;"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+<li><a href="mylogin.html"  style="font-family:century gothic;">login</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="conatiner-fluid">
+<div class="row">
+<div class="col-sm-6">
+<p style="font-family:century gothic;color:magenta;font-size:22px;padding-top:2px;opacity:.65" id="pro1"><i>
+One account and every thing cum internet products and softwares in your services!....</i></p>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+<form id="signup_form">
+<h1> Sign up account </h1>
+<p> Start filling the entites below</p>
+<hr>
+<label for="Name"><b>Name</b></label>
+<input type="text" placeholder="Full Name" name="myname" autocomplete="off" required  id="form_fname">
+<label for="Name"><b>Email</b></label>
+<input type="text" placeholder="Correct Email id" name="myemail" autocomplete="off" required id="form_email">
+<label for="Name"><b>City</b></label>
+<input type="text" placeholder="Current city" name="mycity" autocomplete="off"  id="pro3" >
+<label for="Name"><b>Mobile No.</b></label>
+<input type="text" placeholder="Mobile No." name="myphoneno" autocomplete="off"  id="pro4">
+<label for="Name"><b>Password</b></label>
+<input type="password" placeholder="Password" name="mypassword" autocomplete="off" required id="c2"><span class="first"></span></br>
+<label for="Name"><b>Confirm Password</b></label>
+<input type="password" placeholder="Confirm Password" name="myconfirmpassword" autocomplete="off" required id="form_retype_password">
+<label>
+<input type="checkbox" name="remember" style="margin-button:17px;">Remember Me </label>
+<div id="h1">
+</div>
+<p> By creating an account you agree to our 
+<a href="#"><b>Terms & Conditions</b> </a></p>
+<button type="reset" style="font-family:century gothic;color:black;" class="cancelbtn" id="reset"><b>Reset</b></button>
+<button type="button" style="font-family:century gothic;color:black;" id="btnsubmit" class="signup"><b>Signup<b></button>
+</form>
+</div>
+
+<script src="jquery.js"></script>
+<script src="jqueryUI/jquery-ui.js"></script>
+<script>
+
+
+$(document).ready(function()
+{
+$("#pro3").focus(function() {
+$("#pro3").autocomplete({source:["amsertdam","ahemdabad","armonk","auckland","ankara","bangkok","bangalore",
+"berlin","bejing","capetown","copenhegen","cario","dublin","faridabad","franklin","mumbai","new delhi","paris","london","brussel","madrid","kula lumpur","canbera","fiji","dubai","doha","kuwait","pune","hyderabad","san francisco","san diago","san bernadeno","palo alto","vieana",
+"istanbul","singapore","sydney","toranto","zurich","geneva","munich","pargue","new york"]},{autoFocus:true},{minLength:2});
+});
+ $('#c2').keyup(function(){
+var le=$('#c2').val().length; //used to detect the length of our word
+                              //$('.first').text(le); // it would show only that,, how much character in password it would only show 
+							  //character and a digit in right
+							  
+if(le==0)
+{
+$('.first').text(''); 
+$('.first').removeClass('c1'); // to remove class according to user's choice							  
+$('.first').removeClass('c2'); // to remove class according to user's choice							  							  
+$('.first').removeClass('c2'); // to remove class according to user's choice
+}							  
+else if(le<=6)
+{
+$('.first').text('Weak');    //it would show what ever is ever written in text();
+$('.first').addClass('c1'); //it would add that class  styling which i used in style tag that is .c1
+$('.first').removeClass('c2'); // to remove class according to user's choice
+$('.first').removeClass('c3'); // to remove class according to user's choice
+}
+else if(le<=9)
+{
+$('.first').text('Better'); //it would show what ever is ever written in text();
+$('.first').addClass('c2');  // it would add that class  styling which i used in style tag that is .c2
+$('.first').removeClass('c1'); // to remove class according to user's choice
+$('.first').removeClass('c3'); // to remove class according to user's choice
+}
+else if(le<=12)
+{
+$('.first').text('Strong'); // it would show what ever is ever written in text();
+$('.first').addClass('c3');  //it would add that class  styling which i used in style tag that is .c3
+$('.first').removeClass('c1'); // to remove class according to user's choice
+$('.first').removeClass('c2'); // to remove class according to user's choice
+}
+});
+$("#pro1").css("display","none");
+$("#pro1").fadeIn(8000);
+
+$('#btnsubmit').click(function(){
+var result=$('input[type="checkbox"]:checked');
+if(result.length!=0)
+{
+$('#h1').html("Checked !");
+}
+else
+{
+$('#h1').html(" Not Checked !");
+}
+});
+
+
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+.html,body 
+{
+	height:100%;
+	width:100%;
+}
+.navbar
+{
+	background-color:grey;
+	padding:1% 0;
+	font-size:14px;
+	font-family:century gothic;
+
+
+	
+}
+.navbar-brand
+{
+	min-height:55px;
+	padding:0 15px 5px;
+}
+.navbar-default .navbar-nav li a
+{
+	color:black;
+	display:inline-block;
+    border-radius:10px;
+	background:lightgreen;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a .active
+{
+	color:black;
+	text-decoration:underline;
+}
+
+
+
+.padding
+{
+	padding:80px 0;
+}
+.padding img
+{
+	width:100%
+}
+footer
+{
+	width:100%;
+	background-color:grey;
+	padding:5% 5% 10% 5%;
+	color:black;
+}
+.fa
+{
+	padding:15px;
+	font-size:25px;
+	color:black;
+}
+.fa:hover
+{
+	color:red;
+	text-decoration:none;
+}
+.icon
+{
+	max-width:178px;
+}
+@media (min-width: 768px) {
+
+.navbar
+{
+	background-color:grey;
+	padding:1% 0;
+	font-size:14px;
+	font-family:century gothic;
+
+
+	
+}
+.navbar-brand
+{
+	min-height:25px;
+	padding:0 8px 2px;
+}
+.navbar-default .navbar-nav li a
+{
+	color:black;
+	display:inline-block;
+	padding-bottom:10px;
+    border-radius:10px;
+	background:lightgreen;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a .active
+{
+	color:black;
+	text-decoration:underline;
+}
+
+
+
+
+.fa
+{
+	padding:7px;
+	font-size:18px;
+	color:black;
+}
+.fa:hover
+{
+	color:red;
+	text-decoration:none;
+}
+.icon
+{
+	max-width:120px;
+}
+
+
+
+	}
+
+
+/*---------------------------------------------------------------------------------------------signup----------------------------------*/

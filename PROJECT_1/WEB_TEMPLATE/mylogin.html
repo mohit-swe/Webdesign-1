@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="shortcut icon" type="image/png" href="img/download.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+		 
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+  
+  
+  
+  
+  
+  <style>
+  body
+  {
+  padding-top:160px;
+  background:url('img/loginback.png')no-repeat center center fixed;
+ background-size:cover
+ width:100%;
+ height:100%;
+ }
+ .navbar-default .navbar-nav li a
+{
+	color:black;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a .active
+{
+	color:orange;
+}
+
+ 
+  .modal-content{
+		
+			opacity:.65;
+			width:100%;
+			height:100%;
+			font-family:century gothic;
+			font-size:25px;
+		}
+		.btn-link{
+			color:black;
+		}
+		.modal-heading h2{
+			color:black;
+		font-family:century gothic;
+		
+		}
+		
+		@media(max-width:768px){
+        .form{
+          width:100%;
+	
+        }
+		
+		
+
+
+		
+      }
+	  @media(max-width:576px){
+        .form{
+          width:100%;
+	
+        }
+		#dialog-4
+		{
+		width:100%;
+		height:100%;
+		}
+		.modal-content
+		{
+		width:100%;
+		height:100%;
+		}
+
+		
+		
+		
+      }
+	  .color
+	  {
+	  background:yellow;
+	  }
+	  
+
+		</style>
+  </head>
+  
+  <body>
+  
+	
+  
+<nav class="navbar navbar-default navbar-fixed-top" style="opacity:.75;" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+<span class="sr-only">Toggle Navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#"><img src="img/twitter.ico" width="45px" height="45px" style="padding-bottom:8px;" ></a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-main">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index_1.html" class="active" style="font-family:century gothic;"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+<li><a href="signup.html"  style="font-family:century gothic;">SignIn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+ <br/> 
+  
+  
+  
+  
+  
+  <div class="modal-dialog">
+  
+		<div class="modal-content">
+			<div class="modal-heading">
+				<h2 class="text-center">Login</h2>
+			</div>
+			<hr />
+			<div class="modal-body">
+			
+			
+				<form action="#" method="post" role="form" id="loginform" >
+			
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+							</span>
+							<input type="text" class="form-control"  placeholder="Email" id="form_email" autocomplete="off" required /></br>
+							<span class="first"></span></br>
+						</div>
+						<span id="email_error_message" class="text-danger font-weight-bold"></span>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+							<span class="glyphicon glyphicon-lock"></span>
+							</span>
+							<input type="password" class="form-control" placeholder="Password" id="form_password" autocomplete="off" required  /></br>
+							<span class="second"></span></br>
+						</div>
+<span id="password_error_message" class="text-danger font-weight-bold"></span>
+					</div>
+
+					<div class="form-group text-center">
+						<button type="submit" class="btn btn-danger btn-lg">Login</button>
+						<a href="#" style="text-decoration:none color:white;font-size:15px;" class="btn btn-link">Forgot Password?</a>
+					</div>
+
+					
+					
+		</form>
+				
+
+			
+				
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$(document).ready(function()
+{
+
+         
+
+
+
+
+
+
+
+$(':input').focusin(function(){ // focusin  function ---->as the cursor move to that position get colored
+$(this).addClass('color');
+});
+$(':input').focusout(function(){// focusout  function ---->as the cursor move to that position back to original condition
+$(this).removeClass('color');
+});
+
+$('#form_email').focusin(function(){
+$('.first').text('Enter a valid email :) ');
+});
+$('#form_email').focusout(function(){
+$('.first').text('');     // blank 
+});
+$('#form_password').focusin(function(){
+$('.second').text(' Enter a valid password :) ');
+});
+$('#form_password').focusout(function(){
+$('.second').text('');
+});
+});
+</script>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
